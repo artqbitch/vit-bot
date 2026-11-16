@@ -1,0 +1,5 @@
+serviceAccount.json
+serviceAccounts.json
+*-firebase-adminsdk-*.json
+.env
+/vit-bot

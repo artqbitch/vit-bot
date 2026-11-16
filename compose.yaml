@@ -1,0 +1,13 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN:?Укажите BOT_TOKEN в .env}
+    volumes:
+      - type: bind
+        source: ./serviceAccount.json
+        target: /app/serviceAccount.json
+        read_only: true
+        bind:
+          create_host_path: false
