@@ -3,3 +3,4 @@ serviceAccounts.json
 *-firebase-adminsdk-*.json
 .env
 /vit-bot
+README.md
